@@ -1,0 +1,22 @@
+
+/* text select */
+::selection {
+   background: #eee;
+   color: #333;
+}
+::-moz-selection {
+   background: #eee;
+   color: #333;
+}
+::-webkit-selection {
+   background: #eee;
+   color: #333;
+}
+.block__logo, .post__btn, .post__delete
+{
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}

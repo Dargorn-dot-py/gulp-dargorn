@@ -1,0 +1,64 @@
+[class*="__container"] {
+   max-width: ($containerWidth + $containerPadding) + px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 $containerSidePadding+px;
+   @media (max-width: $breakpoint1400) {
+      max-width: 1100px;
+   }
+   @media (max-width: $breakpoint992) {
+      max-width: 970px;
+   }
+   @media (max-width: $breakpoint768) {
+      max-width: 750px;
+   }
+   @media (max-width: $breakpoint480) {
+      max-width: none;
+   }
+}
+html, body {
+   font-family: $fontMain;
+   scroll-behavior: smooth;
+   scroll-padding-top: 100px;
+   line-height: 1;
+   height: 100%;
+   &._lock {
+      overflow: hidden;
+   }
+}
+body {
+   background-color: $white;
+}
+.btn, .btn-outline {
+   border-radius: 12px;
+   padding: 8px 14px;
+}
+.btn {
+   color: $white;
+   background-color: $primary;
+}
+.btn-outline {
+   color: $primary;
+   background-color: transparent;
+   outline: 1px solid $primary;
+}
+@media (max-width: $breakpoint992) {
+   .btn, .btn-outline {
+      font-size: 16px;
+      padding: 6px 12px;
+   }
+}
+@media (max-width: $breakpoint768) {
+   .btn, .btn-outline {
+      font-size: 18px;
+      padding: 8px 14px;
+   }
+}
+@keyframes fade {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
